@@ -689,7 +689,7 @@ def Range( request_data ):
   lines = request_data[ 'lines' ]
 
   if 'range' not in request_data:
-    start_codepoint = request_data[ 'start_codepoint' ]
+    start_codepoint = request_data[ 'column_codepoint' ]
     start_line_num = request_data[ 'line_num' ]
     start_line_value = request_data[ 'line_value' ]
 
