@@ -715,7 +715,7 @@ def Range( request_data ):
 
   # LSP requires to use the start of the next line as the end position for a
   # range that ends with a newline.
-  if end_codepoint >= len( end_line_value ):
+  if end_codepoint > len( end_line_value ):
     end_line_num += 1
     end_line_value = ''
     end_codepoint = 1
